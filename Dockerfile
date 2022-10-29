@@ -1,7 +1,7 @@
 FROM openjdk:17-jdk-slim-buster
-WORKDIR /app
+WORKDIR /spring-app
 
-COPY app/build/lib/* build/lib/
+COPY spring-app/build/libs/* build/lib/
 
-WORKDIR /app/build
-ENTRYPOINT java -jar app.jar
+WORKDIR /spring-app/build
+ENTRYPOINT java -jar spring-app.jar
