@@ -35,7 +35,7 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           push: true
-          tags: neos79/neo-spring-app:master
+          tags: neos79/neo-spring-app:master${{ github.sha }}
           file: ./Dockerfile
           context: ./
 
